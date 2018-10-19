@@ -30,7 +30,6 @@ def func(n, m):
 
     seq.pop()
 
-    print(seq)
     return seq[n % len(seq)]
 
 if __name__ == '__main__':

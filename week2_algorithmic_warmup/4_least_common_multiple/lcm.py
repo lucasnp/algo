@@ -22,12 +22,12 @@ def lcm_naive(a, b):
     return a*b
 
 def lcm_fast(a, b):
-    # s = min(a, b)
-    # l = max(a, b)
+    s = min(a, b)
+    l = max(a, b)
 
-    gcd = gcd_fast(a, b)
+    gcd = gcd_fast(s, l)
 
-    return int(a * b / gcd)
+    return round(l * s // gcd)
 
 if __name__ == '__main__':
     # input = sys.stdin.read()
